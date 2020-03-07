@@ -40,14 +40,11 @@ const Blogs = props => {
     <Fragment>
       <Layout>
         <SEO
-          title={props.pageResources.json.pageContext.category}
+          title={props.pageContext.category}
           customLayout={"articles-layout"}
         />
-        <CardList
-          articles={props.pageResources.json.data.allContentfulBlogPost.edges}
-        />
-        {props.pageResources.json.data.allContentfulBlogPost.totalCount >
-          15 && (
+        <CardList articles={props.data.allContentfulBlogPost.edges} />
+        {props.data.allContentfulBlogPost.totalCount > 15 && (
           <Pagination
             onlyNextBtn={true}
             prevBtn={true}
