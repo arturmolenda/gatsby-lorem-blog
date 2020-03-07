@@ -37,6 +37,7 @@ export const query = graphql`
 
 const ArticlesPagination = props => {
   const currentPage = props.pageContext.pagesCount / 15 + 1
+  console.log(props)
   return (
     <Fragment>
       <Layout>
@@ -45,14 +46,12 @@ const ArticlesPagination = props => {
           customLayout={"articles-layout"}
         />
         <CardList
-          articles={props.pageResources.json.data.allContentfulBlogPost.edges}
+          articles={props.data.allContentfulBlogPost.edges}
           allActive={true}
         />
         <Pagination
           currentPage={currentPage}
-          totalCount={
-            props.pageResources.json.data.allContentfulBlogPost.totalCount
-          }
+          totalCount={props.data.allContentfulBlogPost.totalCount}
           onlyNextBtn={false}
           prevBtn={true}
           preSlug="/articles"
