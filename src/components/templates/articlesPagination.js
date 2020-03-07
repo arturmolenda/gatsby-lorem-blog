@@ -37,7 +37,6 @@ export const query = graphql`
 
 const ArticlesPagination = props => {
   const currentPage = props.pageContext.pagesCount / 15 + 1
-  console.log(props)
   return (
     <Fragment>
       <Layout>
