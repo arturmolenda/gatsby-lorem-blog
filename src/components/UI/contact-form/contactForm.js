@@ -19,16 +19,17 @@ const ContactForm = () => {
       <form
         className="form-container"
         name="netlify-form"
-        netlify-honeypot="bot-field"
         data-netlify="true"
-        onSubmit={submitHandle}
+        method="post"
       >
+        <input type="hidden" name="form-name" value="netlify-form" />
         <label>
           <input
             type="text"
             name="name"
             className="form-input"
             placeholder="Name"
+            required
           />
         </label>
         <label>
@@ -37,6 +38,7 @@ const ContactForm = () => {
             name="email"
             className="form-input"
             placeholder="Email"
+            required
           />
         </label>
         <label>
@@ -46,6 +48,7 @@ const ContactForm = () => {
             rows="5"
             placeholder="Message"
             className="form-input"
+            required
           />
         </label>
         <button type="submit" className="formBtn">
