@@ -6,13 +6,24 @@ import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const ContactForm = () => {
+  const submitHandle = e => {
+    e.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    })
+      .then(() => navigate("/contact"))
+      .catch(error => console.log(error))
+  }
+
   return (
     <div className="contact-container">
       <form
         className="form-container"
-        method="post"
+        name="netlify-form"
         netlify-honeypot="bot-field"
         data-netlify="true"
+        onSubmit={submitHandle}
       >
         <input type="hidden" name="bot-field" />
         <label>
