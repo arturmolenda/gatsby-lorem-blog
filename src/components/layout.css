@@ -620,3 +620,42 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.custom-layout {
+  margin: 0 auto;
+  max-width: 60%;
+  min-height: 70.6vh;
+}
+@media only screen and (max-width: 768px) {
+  .custom-layout {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .custom-layout {
+    max-width: 80%;
+  }
+}
+.articles-layout {
+  margin: 0 auto;
+  max-width: 90%;
+  min-height: 70.6vh;
+}
+.custom-article-layout {
+  max-width: 50%;
+  margin-left: 15%;
+  background: #fff;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+  .custom-article-layout {
+    max-width: 65%;
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .custom-article-layout {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

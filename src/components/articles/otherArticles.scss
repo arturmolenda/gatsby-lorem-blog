@@ -1,0 +1,88 @@
+$yellow: #f5d10d;
+$dark: #181818;
+
+// Styling for the latest articles displayed on the right side of the article
+.articles-absolute {
+  width: 20%;
+  background: $dark;
+  position: absolute;
+  right: 7%;
+  top: 100%;
+  height: auto;
+
+  .container-wrap {
+    margin: 20px;
+  }
+  .image {
+    height: fit-content;
+    line-height: 0;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .content {
+    background-color: $dark;
+    padding: 10px;
+    .title {
+      color: #fff;
+
+      margin-bottom: 5px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .post-details {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+
+  .content-title {
+    font-size: 20px;
+    color: $dark;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    background-color: $yellow;
+    text-align: center;
+  }
+
+  .content {
+    color: $yellow;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1350px) {
+    width: 20%;
+    right: 1.5%;
+    .content {
+      padding: 5px;
+      .post-details {
+        font-size: 11px;
+      }
+      .title {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+    .container-wrap {
+      margin: 10px;
+    }
+
+    .content-title {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.container-wrap:hover {
+  .content {
+    background-color: $yellow;
+  }
+
+  .title,
+  .post-details {
+    color: $dark;
+  }
+}

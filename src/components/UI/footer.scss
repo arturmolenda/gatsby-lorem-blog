@@ -1,0 +1,41 @@
+$yellow: #d8b948;
+$dark: #181818;
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: $dark;
+  margin-top: 29px;
+}
+.custom-layout .footer {
+  margin-top: 29px !important;
+}
+.footer-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.line-break {
+  flex-basis: 100%;
+  border-top: 1px solid #505050;
+  margin-bottom: 10px;
+}
+.footer-copy {
+  color: #8e8d83;
+  font-size: 16px;
+}
+.footer-links {
+  text-decoration: none;
+  margin: 20px 0 10px 0;
+}
+.footer-links a {
+  margin: 20px;
+  color: #dec362;
+}

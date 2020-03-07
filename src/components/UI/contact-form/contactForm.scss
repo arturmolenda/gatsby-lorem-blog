@@ -1,0 +1,113 @@
+$dark: #181818;
+$yellow: #d8b948;
+
+*:focus {
+  outline: none;
+}
+.header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.contact-container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $dark;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+}
+.form-line-break {
+  flex-basis: 100%;
+}
+.secondary-contact {
+  padding: 10px;
+  background: #d8b948;
+  width: 400px;
+  justify-content: flex-start;
+  margin-top: 30px;
+  border-radius: 10px;
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
+}
+.form-input,
+.formBtn {
+  width: 400px;
+  padding: 10px;
+  margin: 5px 0;
+  color: $dark;
+  background: #eaf1f3;
+  border: none;
+  border-radius: 10px;
+  resize: vertical;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.formBtn {
+  background-color: $yellow;
+  cursor: pointer;
+}
+.formBtn:hover {
+  background-color: #c09c19;
+}
+.location,
+.email {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.email {
+  border-top: 1px solid $dark;
+}
+.email,
+.location svg {
+  font-size: 27px;
+}
+.location svg {
+  width: 18px;
+}
+.email-text {
+  margin-left: 45px;
+  font-size: 20px;
+}
+.location-text {
+  margin-left: 50px;
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  .email-text {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .location-text {
+    margin-left: 25px;
+    font-size: 17px;
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  background-color: $dark;
+  font-size: 50px;
+  border-top: 1px solid $dark;
+  border-radius: 10px;
+}
+.social-media a {
+  margin: 10px 0;
+  color: $yellow;
+}
+.social-media a:hover {
+  color: #c09c19;
+}

@@ -1,0 +1,9 @@
+// Styling for articles displayed below the comments section
+.related-articles-wrap {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0;
+}
+.related-articles-wrap div {
+  margin-right: 1px;
+}
