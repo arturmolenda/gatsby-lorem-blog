@@ -8,7 +8,13 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 const ContactForm = () => {
   return (
     <div className="contact-container">
-      <form className="form-container" netlify>
+      <form
+        className="form-container"
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <input type="hidden" name="bot-field" />
         <label>
           <input
             type="text"
