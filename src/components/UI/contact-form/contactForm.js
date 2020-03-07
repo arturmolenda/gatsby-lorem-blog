@@ -6,19 +6,9 @@ import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const ContactForm = () => {
-  const submitHandle = e => {
-    e.preventDefault()
-  }
   return (
     <div className="contact-container">
-      <form
-        className="form-container"
-        method="POST"
-        data-netlify="true"
-        onSubmit={submitHandle}
-      >
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
+      <form className="form-container" netlify>
         <label>
           <input
             type="text"
