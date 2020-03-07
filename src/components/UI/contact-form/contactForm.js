@@ -12,8 +12,6 @@ const ContactForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     })
-      .then(() => navigate("/contact"))
-      .catch(error => console.log(error))
   }
 
   return (
@@ -25,7 +23,6 @@ const ContactForm = () => {
         data-netlify="true"
         onSubmit={submitHandle}
       >
-        <input type="hidden" name="bot-field" />
         <label>
           <input
             type="text"
