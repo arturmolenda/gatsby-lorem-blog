@@ -6,7 +6,7 @@ import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const ContactForm = () => {
-  submitHandle = e => {
+  const submitHandle = e => {
     e.preventDefault()
   }
   return (
