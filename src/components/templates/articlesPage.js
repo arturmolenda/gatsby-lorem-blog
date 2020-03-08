@@ -33,7 +33,7 @@ export const query = graphql`
     moreArticles: allContentfulBlogPost(
       sort: { fields: publishedDate, order: DESC }
       limit: 6
-      filter: { category: { eq: $category } }
+      filter: { category: { eq: $category }, slug: { ne: $slug } }
     ) {
       nodes {
         title

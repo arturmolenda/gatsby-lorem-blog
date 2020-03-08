@@ -15,7 +15,7 @@ const Home = () => {
         </h4>
         <h4>
           Titles are from real articles so if any piqued your interest just
-          google search for the title
+          google search the title
         </h4>
         <div className="link-btn">
           <Link to="/articles">Head to articles</Link>
